@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     
+    <center>
+            <h2><span style="color: red">Red</span> Bus.com</h2>
+            <br> 
+            <br>
+            <h3>All available <span style="color: red">Buses</span> now</h3>
+            <br>
+            <br>
+            
+    <table border="1" style="align-content: center">
+        <thead>
+            <th> busnumber</th>
+            <th> service</th>
+            <th> departure</th>
+            <th> from</th>
+            <th> destination</th>
+            <th> price</th>
+            <th> option</th>
+        </thead>
+        <tbody>
+            <% for(let i=0;i<data.length;i++) {%>
+            <tr>
+                <td> <%=data[i].busnumber %></td>
+                <td> <%=data[i].service %></td>
+                <td> <%=data[i].departure %></td>
+                <td> <%=data[i].from %></td>
+                <td> <%=data[i].destination %></td>
+                <td> <%=data[i].price %></td>
+                <td> <%=data[i].option %></td>
+            </tr>
+            <% } %>
+            
+        </tbody>
+    </table>
+    </center>
+</body>
+</html>

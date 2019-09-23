@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Entry</title>
+    <style>
+        form{
+            background-color:gray;
+            border: 1px solid black;
+            width: 500px;
+        }
+
+    </style>
+</head>
+<center>
+
+    <h2 style="text-align: center"> <span style="color: red">RED</span>BUS.COM</h2>
+    <br>
+    <br>
+    <h4 style="text-align: center"> DATABASE ENTRY FOR <span style="color: red">RED</span> BUS DETAIL </h4> 
+    <form action="/insertuser">
+       
+                <label>busnumber</label>
+                <input type="text" name="busnumber"  placeholder="busnumber">
+                <br>
+                <br>
+                <label>service</label>
+                <input type="text" name="service"  placeholder="service">
+                <br>
+                <br>
+                <label>departure</label>
+                <input type="time" name="departure" placeholder="departure">
+                <br>
+                <br>
+                <label>from</label>
+                <input type="text" name="from" placeholder="from">
+                <br>
+                <br>
+                <label>destination</label>
+                <input type="text" name="destination" placeholder="destination">
+                <br>
+                <br>
+                <label>price</label>
+                <input type="text" name="price" placeholder="price">
+                <br>
+                <br>
+                <label>option</label>
+                <select name="option">
+                    <option value="A/C-BUS">A/C-BUS</option>
+                    <option value="NON-A/C">NON-A/C</option>
+                    <option value="SLEEPER">SLEEPER</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit">
+
+                
+    </form>
+    <br>
+    <br>
+    <a href="list"><button>All Buses</button></a>
+    <a href="delete"><button>Delete bus</button></a>
+    
+</center>
+</html>
